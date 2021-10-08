@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #621402;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1170px;
+}
+.header {
+    display: flex;
+}
+.nav {
+    margin-left: 57px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+.menu-link {
+    margin-left: 25px;
+    text-decoration: none;
+
+    color: #fff;
+}
+.logo {
+    width: 30px;
+    height: 30px;
+}
+.user {
+    margin-left: auto;
+}
+.avatar {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+}
