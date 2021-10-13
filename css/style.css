@@ -161,14 +161,28 @@ body {
     line-height: 22px;
 }
 .session-cinema-items {
-    position: absolute;
+    margin-top: 33px;
     min-width: 470px;
     height: 60px;
-    left: 635px;
-    top: 678px;
+    padding-left: 18px;
     background: rgba(255, 255, 255, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.5);
     box-sizing: border-box;
     border-radius: 5px;
     color: #fff;
+}
+.session-cinema-items option {
+    color: #000;
+}
+.session-time select {
+    padding: 18px;
+    margin-top: 33px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #fff;
+}
+.session-time option {
+    color: #000;
 }
