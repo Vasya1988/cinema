@@ -189,16 +189,18 @@ body {
 .scheme {
     background: rgba(36, 36, 36, 0.18);
 }
-.scheme path {
+.scheme path:not(.light, .booked, .active) {
     fill: rgba(255, 255, 255, 0.2);
 }
 .scheme path:hover {
-    fill: rgba(255, 255, 255, 1);
+    fill: rgba(255, 255, 255, 0.05);
 }
 .booked {
-    fill: rgba(255, 255, 255, 0.05);;
+    fill: rgba(255, 255, 255, 0.05);
 }
-.row {
-    display: flex;
-    justify-content: center;
+.light {
+    background: linear-gradient(180deg, rgba(196, 196, 196, 0.21) 0%, rgba(196, 196, 196, 0) 100%);
+}
+.active {
+    fill: #FE8E05;
 }
