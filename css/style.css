@@ -189,10 +189,10 @@ body {
 .scheme {
     background: rgba(36, 36, 36, 0.18);
 }
-.scheme path:not(.light, .booked, .active) {
+.scheme .seat:not(.light, .booked, .active, .scheme-text) {
     fill: rgba(255, 255, 255, 0.2);
 }
-.scheme path:hover {
+.scheme .seat:hover {
     fill: rgba(255, 255, 255, 0.05);
 }
 .booked {
