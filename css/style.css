@@ -189,18 +189,43 @@ body {
 .scheme {
     background: rgba(36, 36, 36, 0.18);
 }
-.scheme .seat:not(.light, .booked, .active, .scheme-text) {
+.seat:not(.light, .booked, .active, .scheme-text), .seat-preview {
     fill: rgba(255, 255, 255, 0.2);
 }
-.scheme .seat:hover {
+.seat:hover:not(.light, .booked, .active, .scheme-text) {
     fill: rgba(255, 255, 255, 0.05);
 }
-.booked {
+.booked, .booked-preview {
     fill: rgba(255, 255, 255, 0.05);
 }
 .light {
     background: linear-gradient(180deg, rgba(196, 196, 196, 0.21) 0%, rgba(196, 196, 196, 0) 100%);
 }
-.active {
+.active, .active-preview {
     fill: #FE8E05;
+}
+.buyTicket {
+    margin-top: 62px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.price {
+    display: flex;
+    flex-direction: column;
+}
+.price span:not(.total-price) {
+    font-size: 18px;
+    line-height: 21px;
+}
+.total-price {
+    font-size: 52px;
+    line-height: 61px;
+}
+.payButton {
+    background-color: #fe8e05;
+    border-radius: 5px;
+    padding: 24px 52px;
+    color: #fff;
+    text-decoration: none;
 }
