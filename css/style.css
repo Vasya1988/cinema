@@ -13,7 +13,7 @@ body {
     max-width: 1170px;
 }
 .header {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url('/img/bg.png') no-repeat top center / cover;
 }
 .nav-bar {
@@ -187,6 +187,7 @@ body {
     color: #000;
 }
 .scheme {
+    margin-top: 63px;
     background: rgba(36, 36, 36, 0.18);
 }
 .seat:not(.light, .booked, .active, .scheme-text), .seat-preview {
@@ -206,6 +207,7 @@ body {
 }
 .buyTicket {
     margin-top: 62px;
+    margin-bottom: 158px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
