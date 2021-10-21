@@ -12,6 +12,11 @@ body {
     margin: 0 auto;
     max-width: 1170px;
 }
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
 .header {
     /* min-height: 100vh; */
     background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url('../img/bg.png') no-repeat top center / cover;
@@ -135,7 +140,8 @@ body {
     justify-content: center;
     color: #fff;
 }
-.session-date-item:hover {
+
+.session-date-item:hover, .session-date-item-active {
     cursor: pointer;
     background-color: #FE8E05;
     color: #621402;

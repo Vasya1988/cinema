@@ -7,7 +7,8 @@ const elements = {
     scheme: document.querySelector('.scheme'),
     seat: document.querySelectorAll('.seat'),
     active: document.querySelectorAll('.active'),
-    totalPrice: document.querySelector('.total-price')
+    totalPrice: document.querySelector('.total-price'),
+    currentDate: document.querySelectorAll('.session-date-item')
 }
 
 elements.seat.forEach((item)=> {
@@ -20,4 +21,17 @@ elements.seat.forEach((item)=> {
         }
     })
     
+});
+
+elements.currentDate.forEach((item) => {
+    item.addEventListener('click', (eventDate) => {
+        elements.currentDate.forEach((e)=>{
+            e.classList.remove('session-date-item-active')
+        });
+        console.log(item)
+        if (item) {
+            item.classList.toggle('session-date-item-active');
+
+        }
+    });
 })
